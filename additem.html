@@ -11,7 +11,7 @@
 		<meta name = "viewport" content="user-scalable=no, width=divice-width" />
 		<meta name="HandheldFriendly" content="true" />
 		<meta name="MobileOptimized" content="320" />
-<title>My First HTML5 Document</title>
+<title>HotRod Show Finder</title>
 			
 <link rel="stylesheet" href="css/style.css?=1.0">
 	
@@ -40,7 +40,7 @@
 				<li><label for="email">Email:</label><input type="text" id="email" /></li>
 				<li><label for="pword">Password:</label><input type="password" id="pword" /></li>
 				<li><label for="cpword">Confirm Password(Disabled):</label><input type="password" id="cpword" disabled /></li>
-				<li><label for="phone">Phone Number:</label><input type="text" id="phone" /></li>
+				<li><label for="tel">Phone Number:</label><input type="tel" id="tel" /></li>
 			</ul>
 		
 	<ul>
@@ -50,8 +50,10 @@
 			<li><input type="radio" value="female" id="female" name="sex"<label for="female">Female</label></li>
 			<li><input type="radio" value="noanswer" id="noanswer" name="sex"<label for="noanswer">Prefer Not to Answer</label></li>
 			</ul>
+			</ul>
 		
-			Find a Show: <!-- My dropdown menu -->
+			<ul>
+				<li>Find a Show:</li> <!-- My dropdown menu -->
 	<select>
 		<ul>
 			<li><option></option></li>
@@ -65,26 +67,22 @@
 			<li><option>Low-Riders</option></li>
 			<li><option>High-Riders</option></li>
 		</ul>
+		</ul>
 	</select>
-<br />	
-	Date:
-	<select>
-	<ul>
-	
-	</ul>
-	</select>	
 <br />
-		Additional Comments:
-<br />
-	<textarea rows="10" cols="30">
-Add more info here!
-	</textarea>
-
+				<!-- This is a slider, but doesn't slide on FireFox. Only shows a text box. Works in Opera and Safari browsers -->
+				<label for"rating">On a scale of 1 to 10, how excited are you to find a HotRod Show in your area?</label>
+				<input type="range" min="1" max = "10" name="rating" type="range">
+				
+						<p>Additional Comments:</p><!-- Comments -->
+			<textarea rows="10" cols="30">
+Add comment here!
+			</textarea>
 	</fieldset>
 <input type="submit" value="Submit">
 		</input> 
-<br />
 
+<br />
 <a href="#">Clear Stored Data</a>  
 <a href="#">Display Data</a>
 	</header>
