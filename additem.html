@@ -17,9 +17,10 @@
 	
 	</head>
 <body>
- <h1>HotRod Show Finder</h1>
-	<header>
-	<!-- Navigation Tags -->
+<!-- My header tags -->
+ 	<header>
+ 	<h1>HotRod Show Finder</h1>
+ 			<!-- Navigation Tags -->
 			<nav>
 		<ul>
 		<li><a href = "#">Previous</a></li>
@@ -27,33 +28,61 @@
 		<li><a href = "#">Next</a></li>
 		</ul>
 	</nav>
-<h1>My App Name</h1>	
-<h2>Welcome</h2>
-<p></p>
-		Find a Show:
-	<select>
-		<ol>
-		<li>Chevy</li>
-		<li>Mopar</li>
-		<li>Tuner</li>
-		<li>Antique</li>
-		<li>Classic</li>	
-		<li>Camaro 1st, 2nd, & 3rd Gens</li>
-		<li>Ford</li>
-		<li>Low-Riders</li>
-		<li>High-Riders </li>
-		</ol>
-		<input type="submit" value="submit">
-		</input> 
-			
-		</select>
 
+<h2>Sign-up to Find HodRod Shows in your Area!</h2>
+</header>
+	<form action ="" method="post"></form>
+		<fieldset>
+			<legend>Information</legend>
+			<ul> <!-- Labels and information boxes -->
+				<li><label for="fname">First Name:</label><input type="text" id="fname" /></li>
+				<li><label for="lname">Last Name:</label><input type="text" id="lname" /></li>
+				<li><label for="email">Email:</label><input type="text" id="email" /></li>
+				<li><label for="pword">Password:</label><input type="password" id="pword" /></li>
+				<li><label for="cpword">Confirm Password(Disabled):</label><input type="password" id="cpword" disabled /></li>
+				<li><label for="phone">Phone Number:</label><input type="text" id="phone" /></li>
+			</ul>
+		
+	<ul>
+		<li>Are you</li> <!-- Radio button question -->
+			<ul>
+			<li><input type="radio" checked value="male" id="male" name="sex" /><label for="male">Male</label></li>
+			<li><input type="radio" value="female" id="female" name="sex"<label for="female">Female</label></li>
+			<li><input type="radio" value="noanswer" id="noanswer" name="sex"<label for="noanswer">Prefer Not to Answer</label></li>
+			</ul>
+		
+			Find a Show: <!-- My dropdown menu -->
+	<select>
+		<ul>
+			<li><option></option></li>
+			<li><option>Chevy</option></li>
+			<li><option>Mopar</option></li>
+			<li><option>Tuner</option></li>
+			<li><option>Antique</option></li>
+			<li><option>Classic</option></li>	
+			<li><option>Camaro 1st, 2nd, & 3rd Gens</option></li>
+			<li><option>Ford</option></li>
+			<li><option>Low-Riders</option></li>
+			<li><option>High-Riders</option></li>
+		</ul>
+	</select>
 <br />	
 	Date:
 	<select>
+	<ul>
 	
-</select>	
-	
+	</ul>
+	</select>	
+<br />
+		Additional Comments:
+<br />
+	<textarea rows="10" cols="30">
+Add more info here!
+	</textarea>
+
+	</fieldset>
+<input type="submit" value="Submit">
+		</input> 
 <br />
 
 <a href="#">Clear Stored Data</a>  
