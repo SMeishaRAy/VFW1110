@@ -24,7 +24,7 @@
  			<h1>HotRod Show Finder</h1>
  			<!-- Navigation Tags -->
 				<nav>
-					<ul>
+					<ul id="navList">
 						<li><a href = "#">Previous</a></li>
 						<li><a href = "#">Home</a></li>
 						<li><a href = "#">Next</a></li>
@@ -35,7 +35,7 @@
 			<h2>Sign-up to Find HotRod Shows in your Area!</h2>
 	</header>
 
-			<form action ="" method="post">
+			<form action ="#" method="post">
 				<fieldset>
 					<legend>Sign-up Information</legend>
 			
@@ -48,6 +48,7 @@
 							<li><label for="pword">Password:</label><input type="password" id="pword" /></li>
 							<li><label for="cpword">Confirm Password(Disabled):</label><input type="password" id="cpword" disabled /></li>
 							<li><label for="tel">Phone Number:</label><input type="tel" id="tel" /></li>
+							<li><label for="location">Zipcode:</label><input type="location" id="zip" /></li>
 						</ul>
 		
 						<ul><!-- input for birthdate-->
@@ -69,7 +70,7 @@
 					<ul><!-- My dropdown menu -->
 						<li>Find a Show:</li> 
 			<select id="shows">
-						<ul>
+						<ul id="showList">
 							<li><option></option></li>
 							<li><option>Chevy</option></li>
 							<li><option>Corvette</option></li>						
