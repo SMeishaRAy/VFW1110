@@ -11,27 +11,28 @@
 		<meta name = "viewport" content="user-scalable=no, width=divice-width" />
 		<meta name="HandheldFriendly" content="true" />
 		<meta name="MobileOptimized" content="320" />
-<title>HotRod Show Finder</title>
+				
+				<title>HotRod Show Finder</title>
 			
-<link rel="stylesheet" href="css/style.css?=1.0">
-	
-	</head>
+				<link rel="stylesheet" href="css/style.css?=1.0">
+</head>
 <body>
 <!-- My header tags -->
  	<header>
  	<h1>HotRod Show Finder</h1>
  			<!-- Navigation Tags -->
-			<nav>
+	<nav>
 		<ul>
-		<li><a href = "#">Previous</a></li>
-		<li><a href = "#">Home</a></li>
-		<li><a href = "#">Next</a></li>
-		<li><a href="#">Login</a></li>
+			<li><a href = "#">Previous</a></li>
+			<li><a href = "home">Home</a></li>
+			<li><a href = "#">Next</a></li>
+			<li><a href="#">Login</a></li>
 		</ul>
 	</nav>
 
 <h2>Sign-up to Find HodRod Shows in your Area!</h2>
 </header>
+
 	<form action ="" method="post"></form>
 		<fieldset>
 			<legend>Information</legend>
@@ -41,8 +42,7 @@
 				<li><label for="lname">Last Name:</label><input type="text" id="lname" /></li>
 				<li><label for="email">Email:</label><input type="text" id="email" /></li>
 				<li><label for="username">User Name:</label><input type="text" id="username" />
-				<input type="submit" value="Check Availability">
-				</input> </li>
+				<input type="submit" value="Check Availability" /> </li>
 				<li><label for="pword">Password:</label><input type="password" id="pword" /></li>
 				<li><label for="cpword">Confirm Password(Disabled):</label><input type="password" id="cpword" disabled /></li>
 				<li><label for="tel">Phone Number:</label><input type="tel" id="tel" /></li>
@@ -51,7 +51,7 @@
 		<ul><!-- input for birthdate-->
 			<li>Enter Birthday: format(YYYY-M-D)</li>
 				<input type="date" name="user_date" />
-			</input>
+			
 		</ul>
 		
 	<ul><!-- Radio Button Question -->
@@ -83,22 +83,26 @@
 	
 <br />
 				<!-- This is a slider, but doesn't slide on FireFox. Only shows a text box. Works in Opera and Safari browsers -->
-				<label for"rating">On a scale of 1 to 10, how excited are you to find a HotRod Show in your area?</label>
-					<input type="range" min="1" max = "10" name="rating" type="range">
-					</input>
+				<li><label for"rating">On a scale of 1 to 10, how excited are you to find a HotRod Show in your area?</label>
+					<input type="range" min="1" max = "10" name="rating" type="range" />
+					</li>
 <br />			
-			<ul>
+			
 				<li>Do you want to receive updates via email?</li>
-				<li><input type="checkbox" name="yes" value="yes">Yes</li>
-				<li><input type="checkbox" name = "no" value="no">No</li>
-			</ul>
+				<input type="checkbox" name="yes" value="yes">Yes
+				<input type="checkbox" name = "no" value="no">No
+				</li>
+			
+			If yes, please enter your email address to receive future updates and notices of HotRod shows in your area.
+			<li><label for="email">Email:</label><input type="text" id="email" /></li>
+			
 		<!-- Comments -->	
 		<p>Additional Comments:</p>
 			<textarea rows="5" cols="30">Add comment here!</textarea>
 	</fieldset>
 	<!-- Final Submit Button -->
-			<input type="submit" value="Submit">
-				</input> 
+			<input type="submit" value="Submit" />
+				
 				
 <br />
 		<!-- Stored Data links -->
